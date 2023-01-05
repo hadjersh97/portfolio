@@ -1,0 +1,38 @@
+@import "../../variable.module.scss";
+
+nav {
+  transition: $transition;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    list-style-type: none;
+}
+
+.active {
+  border-bottom: 5px solid;
+  border-image-slice: 1;
+}
+
+li {
+  transition: $transition;
+  padding: 30px;
+  text-decoration: none;
+  &:hover {
+    transform: translateY(-3px);
+    transition: $transition;
+    color: rgb(209, 50, 169);
+  }
+}
+
+li:hover {
+  color: rgb(209, 50, 169);
+}
+
+ul li > a, a:focus, a:active {
+    text-decoration: none;
+    color: #000;
+}
